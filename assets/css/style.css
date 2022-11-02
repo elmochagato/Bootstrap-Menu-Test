@@ -330,15 +330,10 @@ select {
 /* Media Query */
 @media screen and (max-width: 468px) {
   .d-block {
-    height: 85vh;
+    height: 86vh;
   }
 }
 
-@media screen and (min-height: 740px) {
-  .d-block {
-    height: 88vh;
-  }
-}
 
 @media screen and (max-width: 468px) {
   .htext {
@@ -359,6 +354,7 @@ select {
 }
 
 /* Safari test */
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   _::-webkit-full-page-media,
   _:future,
