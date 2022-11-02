@@ -334,7 +334,7 @@ select {
 /* Media Query */
 @media screen and (max-width: 768px) {
   .d-block {
-    height: 93vh;
+    height: 85vh;
   }
 }
 
