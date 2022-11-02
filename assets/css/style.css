@@ -157,6 +157,8 @@ select {
 
 .carousel-caption{padding-bottom:80px;}
 
+.carousel-indicators{padding-bottom:15px;}
+
 .htext{font-size: 60px;}
 .ptext{padding:10px}
 
@@ -349,8 +351,3 @@ select {
 .carousel-caption{padding-bottom:40px;}
 }
 
-
-
-@media screen and (max-width: 768px) {
-  .carousel-indicators{padding-bottom:15px;}
-  }
