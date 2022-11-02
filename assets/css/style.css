@@ -332,19 +332,25 @@ select {
 
 /* Media Query */
 /* Media Query */
-@media screen and (max-height: 700px) {
+@media screen and (max-width: 768px) {
   .d-block {
-    height: 90vh;
+    height: 93vh;
   }
 }
 
 
-@media screen and (max-height: 700px) {
+@media screen and (max-width: 768px) {
   .htext {
     font-size: 30px;
   }
 }
 
-@media screen and (max-height: 700px) {
-.carousel-caption{padding-bottom:20px;}
+@media screen and (max-width: 768px) {
+.carousel-caption{padding-bottom:40px;}
 }
+
+
+
+@media screen and (max-width: 768px) {
+  .carousel-indicators{padding-bottom:15px;}
+  }
