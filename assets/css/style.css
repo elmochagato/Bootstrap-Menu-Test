@@ -360,6 +360,6 @@ select {
   _:future,
   :root,
   .carousel-indicators {
-    padding-bottom: 13vh;
+    padding-bottom: 12vh;
   }
 }
