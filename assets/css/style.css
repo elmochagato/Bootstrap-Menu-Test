@@ -157,7 +157,7 @@ select {
 
 .carousel-caption{padding-bottom:80px;}
 
-.carousel-indicators{padding-bottom:15px;}
+.carousel-indicators{padding-bottom:18px;}
 
 .htext{font-size: 60px;}
 .ptext{padding:10px}
@@ -334,20 +334,39 @@ select {
 
 /* Media Query */
 /* Media Query */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 468px) {
   .d-block {
     height: 85vh;
   }
 }
 
+@media screen and (min-height: 740px) {
+  .d-block {
+    height: 88vh;
+  }
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 468px) {
   .htext {
     font-size: 30px;
   }
 }
 
-@media screen and (max-width: 768px) {
-.carousel-caption{padding-bottom:40px;}
+@media screen and (max-width: 468px) {
+.carousel-caption{padding-bottom:16vh;}
 }
 
+
+
+@media screen and (max-width: 378px) {
+  .carousel-caption{padding-bottom:60px;}
+  }
+
+/* Safari test */
+  @media not all and (min-resolution:.001dpcm) { 
+    @media  (max-width: 468px) {
+      .carousel-indicators {
+        padding-bottom: 12vh;
+      }
+    }
+  }
