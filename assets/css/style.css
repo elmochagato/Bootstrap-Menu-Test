@@ -12,10 +12,12 @@
 }
 
 #root {
-  display: flex;
-  flex: 1 1;
-  height: 100%;
-  width: 100%;
+  position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all .2s;
 }
 
 /* Remove default margin */
@@ -141,13 +143,16 @@ select {
 }
 
 
-#carouselExampleFade .carousel-item  {  
+.d-block {
   object-fit: cover;
+}
+
+#carouselExampleFade .carousel-item {  
   object-position: center;
+  object-fit: cover;
   overflow: hidden;
-  height:100vh;
-  min-height: 100vh; 
-  min-height: -webkit-fill-available;
+  height: 100vh;
+  height: 100vh;
 }
 
 #carouselExampleFade .carousel-item:before {
@@ -160,10 +165,13 @@ select {
   display: block;
   position: fixed;
   top: 0;
+  bottom: 0;
   width: 100vw;
   height: 100vh;
   min-height: 100vh; 
- min-height: -webkit-fill-available;
+  min-height: -webkit-fill-available;
+ 
+ 
 }
 
 .carousel-caption {
@@ -180,6 +188,31 @@ select {
 .ptext {
   padding: 10px;
 }
+
+
+
+
+/*sections*/
+/*sections*/
+#carouselsection {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(39, 37, 34, 0.8);
+  overflow: hidden;
+  padding: 0;
+}
+
+.navbarsection {
+  padding: 0;
+}
+
+section {
+  padding: 30px 0
+}
+
+
+/*sections*/
+/*sections*/
 
 /**
  * Change animation duration
@@ -369,7 +402,7 @@ select {
 
 @media screen and (max-width: 468px) {
   .carousel-indicators {
-    padding-bottom: 8vh;
+    padding-bottom: 10vh;
   }
 }
 
