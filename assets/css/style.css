@@ -364,16 +364,23 @@ select {
   }
 }
 
+
+
 /*scroll bar */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-::-webkit-scrollbar-track {
-  background:  #202124; 
-}
+
  
 ::-webkit-scrollbar-thumb {
-  background:  rgba(255, 255, 255, 0.178);
+  background:  rgba(109, 103, 103, 0.644);
   border-radius: 20px;
+}
+
+
+@media (min-width:801px)  {
+  body {
+    overflow: overlay;
+  }
 }
