@@ -155,11 +155,11 @@ select {
 }
 
 .carousel-caption {
-  padding-bottom: 80px;
+  padding-bottom: 15vh;
 }
 
 .carousel-indicators {
-  padding-bottom: 20px;
+  padding-bottom: 3.5vh;
 }
 
 .htext {
@@ -345,21 +345,28 @@ select {
 
 @media screen and (max-width: 468px) {
   .carousel-caption {
-    padding-bottom: 16vh;
+    padding-bottom: 20vh;
   }
 }
 
 @media screen and (max-width: 378px) {
   .carousel-caption {
-    padding-bottom: 60px;
+    padding-bottom: 16vh;
   }
 }
 
 @media screen and (max-width: 468px) {
   .carousel-indicators {
-    padding-bottom: 3vh;
+    padding-bottom: 7vh;
   }
 }
+
+@media screen and (max-width: 378px) {
+  .carousel-indicators {
+    padding-bottom: 10vh;
+  }
+}
+
 
 
 
