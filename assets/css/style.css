@@ -363,3 +363,17 @@ select {
     padding-bottom: 12vh;
   }
 }
+
+/*scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background:  #202124; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background:  rgba(255, 255, 255, 0.178);
+  border-radius: 20px;
+}
