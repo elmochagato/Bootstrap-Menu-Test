@@ -425,6 +425,7 @@ section {
   }
 }
 
+/* TEST IF WORKS
 @media screen and (max-width: 468px) {
   .carousel-indicators {
     padding-bottom: 9vh;
@@ -436,7 +437,7 @@ section {
     padding-bottom: 8vh;
   }
 }
-
+*/
 
 
 /*scroll bar */
