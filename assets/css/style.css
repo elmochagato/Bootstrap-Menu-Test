@@ -162,16 +162,34 @@ select {
 }
 
 .bg-1 {
-  background-image: url('../img/pexels-chevanon-photography-32899.jpg');
+  background-image: url('../img/chev1080.jpg');
 }
 
 .bg-2 {
-  background-image: url('../img/pexels-andrea-piacquadio-842548.jpg');
+  background-image: url('../img/andrea1080.jpg');
 }
 
 .bg-3 {
-  background-image: url("../img/pexels-afta-putta-gunawan-683039.jpg");
+  background-image: url('../img/afta1080.jpg');
 }
+
+@media screen and (min-width:2048px) {
+   .bg-1 {
+     background-image: url('../img/pexels-chevanon-photography-32899.jpg');
+  }
+}
+
+@media screen and (min-width:2048px) {
+   .bg-2 {
+     background-image: url('../img/pexels-andrea-piacquadio-842548.jpg');
+  }
+}
+@media screen and (min-width:2048px) {
+  .bg-3 {
+    background-image: url('../img/pexels-afta-putta-gunawan-683039.jpg');
+  }
+}
+
 /* carousel imgs*/
 
 #carouselsection .carousel-item::before {
