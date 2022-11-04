@@ -24,6 +24,11 @@ dd {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #ffb03b;
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
 ol[role="list"] {
@@ -35,7 +40,9 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-
+html {
+  transition: all .2s;
+}
 
 /* Set core body defaults */
 body {
@@ -134,6 +141,48 @@ select {
   height: 100vh;
 }
 
+#carouselsection .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#carouselsection .carousel-content {
+  text-align: center;
+}
+
+#carouselsection h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+#carouselsection h2 span {
+  color: #ffb03b;
+}
+
+#carouselsection p {
+  width: 80%;
+  margin: 0 auto 30px auto;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+#carouselsection .carousel-inner .carousel-item {
+  transition-property: opacity;
+  background-position: center top;
+}
+
+
+
 /* carousel imgs*/
 .bg-1,
 .bg-2,
@@ -186,19 +235,109 @@ select {
   bottom: 0;
 }
 
-.carousel-caption {
-  padding-bottom: 15vh;
+/* Footer*/
+#footer {
+  background: #1b1d1f;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
 }
 
-.carousel-indicators {
-  padding-bottom: 3.5vh;
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffb03b;
+  position: relative;
+  padding: 0;
+  margin: 0 0 15px 0;
 }
 
-.htext {
-  font-size: 60px;
+.footer-brand {
+  
+  padding: 0;
+  margin: 0 0 10px 0;
 }
-.ptext {
-  padding: 10px;
+
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #46423b;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #ffb03b;
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+
+#footer .credits {
+  font-size: 13px;
+}
+
+.fa {
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  display: inline-block;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 14px;
+  z-index: 996;
+  background: #ffb03b;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 40px;
+  color: #fff;
+  line-height: 0;
+  padding-bottom: 2px;
+}
+
+.back-to-top:hover {
+  background: #ffc064;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 
@@ -391,24 +530,17 @@ section {
 /* Media Query */
 /* Media Query */
 
-@media screen and (max-width: 468px) {
-  .htext {
-    font-size: 30px;
+@media (max-width: 768px) {
+  #carouselsection h2 {
+    font-size: 28px;
   }
 }
 
-@media screen and (max-width: 468px) {
-  .carousel-caption {
-    padding-bottom: 20vh;
+@media (min-width: 1024px) {
+  #carouselsection p {
+    width: 50%;
   }
 }
-
-@media screen and (max-width: 378px) {
-  .carousel-caption {
-    padding-bottom: 16vh;
-  }
-}
-
 /* TEST IF WORKS
 @media screen and (max-width: 468px) {
   .carousel-indicators {
