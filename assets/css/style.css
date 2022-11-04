@@ -236,6 +236,12 @@ select {
 }
 
 /* Footer*/
+
+.footer-brand {
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
 #footer {
   background: #1b1d1f;
   color: #fff;
@@ -251,12 +257,6 @@ select {
   position: relative;
   padding: 0;
   margin: 0 0 15px 0;
-}
-
-.footer-brand {
-  
-  padding: 0;
-  margin: 0 0 10px 0;
 }
 
 #footer p {
@@ -295,18 +295,6 @@ select {
 
 #footer .credits {
   font-size: 13px;
-}
-
-.fa {
-  font-weight: 400;
-  font-style: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-rendering: auto;
-  display: inline-block;
-  text-transform: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .back-to-top {
@@ -578,3 +566,4 @@ section {
     overflow: overlay;
   }
 }
+
