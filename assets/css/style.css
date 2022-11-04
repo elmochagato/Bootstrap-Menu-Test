@@ -133,6 +133,7 @@ select {
   background-color: #1b1d1f;
 }
 
+
 .offcanvas-header {
   background-color: #1b1d1f;
 }
@@ -674,6 +675,21 @@ section {
 
   .about .accordion-list {
     padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .offcanvas {
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+    border-left: 0;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .offcanvas.offcanvas-end {
+    border-left: 0;
   }
 }
 
