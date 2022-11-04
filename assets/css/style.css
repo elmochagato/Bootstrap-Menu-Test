@@ -684,19 +684,19 @@ section {
   }
 }
 
-/*
+
 @media screen and (max-width: 468px) {
   .carousel-indicators {
-    padding-bottom: 9vh;
+    padding-bottom: 10.5vh;
   }
 }
 
 @media screen and (min-width: 768px) {
   .carousel-indicators {
-    padding-bottom: vh;
+    padding-bottom: 3vh;
   }
 }
-*/
+
 
 
 /*scroll bar */
