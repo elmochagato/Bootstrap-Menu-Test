@@ -225,12 +225,8 @@ section {
  * Change animation duration
  */
 .animated {
-  -webkit-animation-duration: 1.2s;
-  animation-duration: 1.2s;
-  -webkit-animation-delay: 0.32s;
-  animation-delay: 0.32s;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+  animation-duration: 1.5s !important;
+  -webkit-animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fadeInRight {
