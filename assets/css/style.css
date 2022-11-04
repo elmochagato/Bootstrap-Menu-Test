@@ -53,7 +53,7 @@ body {
 
 
 #root {
-  position: relative;
+  position: absolute;
     left: 0;
     right: 0;
     top: 0px;
@@ -61,6 +61,10 @@ body {
     transition: all .2s;
 }
 
+#root-id {
+  border: 0;
+  position: absolute;
+}
 /* Set core body defaults */
 body {
   text-rendering: optimizeSpeed;
@@ -218,49 +222,6 @@ select {
   margin-left: auto;
 }
 
-/* carousel imgs*/
-.bg-1,
-.bg-2,
-.bg-3 {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.bg-1 {
-  background-image: url('../img/chev1080.jpg');
-}
-
-.bg-2 {
-  background-image: url('../img/andrea1080.jpg');
-}
-
-.bg-3 {
-  background-image: url('../img/afta1080.jpg');
-}
-
-@media screen and (min-width:2048px) {
-   .bg-1 {
-     background-image: url('../img/pexels-chevanon-photography-32899.jpg');
-  }
-}
-
-@media screen and (min-width:2048px) {
-   .bg-2 {
-     background-image: url('../img/pexels-andrea-piacquadio-842548.jpg');
-  }
-}
-@media screen and (min-width:2048px) {
-  .bg-3 {
-    background-image: url('../img/pexels-afta-putta-gunawan-683039.jpg');
-  }
-}
-
-/* carousel imgs*/
-
-
 /* Footer*/
 
 .footer-brand {
@@ -358,7 +319,7 @@ select {
 /* CAROUSEL */
 #carouselsection {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(39, 37, 34, 0.8);
   overflow: hidden;
   padding: 0;
@@ -695,15 +656,6 @@ section {
   }
 }
 
-@media (max-width: 768px) {
-  #root-container {
-    width: 380px;
-    height: 680px;
-    left: calc(50% - 190px);
-    top: 0;
-    margin-top: 20px;
-  }
-}
 
 @media (max-width: 1024px) {
 
@@ -723,7 +675,6 @@ section {
     padding-bottom: 30px;
   }
 }
-
 
 /* test
 @media screen and (max-width: 468px) {
