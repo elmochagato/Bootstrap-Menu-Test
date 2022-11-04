@@ -45,7 +45,7 @@ body {
  height: 100%
 }
 
-#root-container {
+.root-container {
   left: 0;
   width: 100%;
   height: 100%;
@@ -59,6 +59,8 @@ body {
     top: 0px;
     bottom: 0;
     transition: all .2s;
+    width: 100%;
+    height: 100%;
 }
 
 #root-id {
@@ -328,7 +330,7 @@ select {
 
 #carouselsection .carousel-item {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -353,6 +355,21 @@ select {
   top: 0;
   left: 0;
   right: 0;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+}
+ .carousel-inner {
+  height: 100%;
+  width: 100%;
+ }
+
+ 
+.carouselsection-container {
+  width: 100%;
+  height: 100%;
 }
 
 #carouselsection .carousel-content {
@@ -706,7 +723,6 @@ section {
   }
 }
 */
-
 
 /*scroll bar */
 ::-webkit-scrollbar {
