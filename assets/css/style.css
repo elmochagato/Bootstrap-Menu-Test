@@ -40,8 +40,25 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-html {
-  transition: all .2s;
+html,
+body {
+ height: 100%
+}
+
+#root-container {
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+#root {
+  position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    bottom: 0;
+    transition: all .2s;
 }
 
 /* Set core body defaults */
@@ -49,6 +66,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: #202124;
+  position: relative;
 }
 
 /* A elements that don't have a class get default styles */
@@ -115,6 +133,7 @@ select {
 .offcanvas-header {
   background-color: #1b1d1f;
 }
+
 
 
 .container-fluid {
@@ -343,10 +362,41 @@ select {
   padding: 0;
 }
 
+
 section {
-  padding: 30px 0
+  padding: 60px 0;
 }
 
+.section-bg {
+  background-color: white;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  margin: 15px 0 0 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #5f5950;
+}
+
+.section-title h2 span {
+  color: #ffb03b;
+}
+
+.section-title p {
+  margin: 15px auto 0 auto;
+  font-weight: 300;
+}
+
+@media (min-width: 1024px) {
+  .section-title p {
+    width: 50%;
+  }
+}
 /*sections*/
 /*sections*/
 
@@ -529,6 +579,19 @@ section {
     width: 50%;
   }
 }
+
+@media (max-width: 768px) {
+  #root-container {
+    width: 380px;
+    height: 680px;
+    left: calc(50% - 190px);
+    top: 0;
+    margin-top: 20px;
+  }
+}
+
+
+
 /* TEST IF WORKS
 @media screen and (max-width: 468px) {
   .carousel-indicators {
@@ -566,4 +629,3 @@ section {
     overflow: overlay;
   }
 }
-
