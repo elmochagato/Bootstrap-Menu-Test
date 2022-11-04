@@ -42,36 +42,16 @@ html:focus-within {
 
 html,
 body {
- height: 100%
+ height: 100%;
+ width: 100%;
 }
 
-.root-container {
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-
-#root {
-  position: absolute;
-    left: 0;
-    right: 0;
-    top: 0px;
-    bottom: 0;
-    transition: all .2s;
-    width: 100%;
-    height: 100%;
-}
-
-#root-id {
-  border: 0;
-  position: absolute;
-}
 /* Set core body defaults */
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: #202124;
+  
 }
 
 /* A elements that don't have a class get default styles */
@@ -328,6 +308,18 @@ select {
   padding: 0;
 }
 
+#carouselsection .carousel {
+  height: 100%;
+}
+#carouselsection .carousel-inner {
+  height: 100%;
+  
+ }
+ #carouselsection .carouselsection-container {
+  
+  height: 100%;
+}
+
 #carouselsection .carousel-item {
   width: 100%;
   height: 100%;
@@ -357,21 +349,6 @@ select {
   right: 0;
 }
 
-.carousel {
-  width: 100%;
-  height: 100%;
-}
- .carousel-inner {
-  height: 100%;
-  width: 100%;
- }
-
- 
-.carouselsection-container {
-  width: 100%;
-  height: 100%;
-}
-
 #carouselsection .carousel-content {
   text-align: center;
 }
@@ -392,43 +369,6 @@ select {
   margin: 0 auto 30px auto;
   color: #fff;
 }
-
-#carouselsection .carousel-inner .carousel-item {
-  transition-property: opacity;
-  background-position: center top;
-}
-
-#carouselsection .carousel-indicators li {
-  cursor: pointer;
-}
-
-
-#carouselsection .carousel-inner .carousel-item {
-  transition-property: opacity;
-  background-position: center top;
-}
-
-#carouselsection .carousel-inner .carousel-item,
-#carouselsection .carousel-inner .active.carousel-item-start,
-#carouselsection .carousel-inner .active.carousel-item-end {
-  opacity: 0;
-}
-
-#carouselsection .carousel-inner .active,
-#carouselsection .carousel-inner .carousel-item-next.carousel-item-start,
-#carouselsection .carousel-inner .carousel-item-prev.carousel-item-end {
-  opacity: 1;
-  transition: 0.5s;
-}
-
-#carouselsection .carousel-inner .carousel-item-next,
-#carouselsection .carousel-inner .carousel-item-prev,
-#carouselsection .carousel-inner .active.carousel-item-start,
-#carouselsection .carousel-inner .active.carousel-item-end {
-  left: 0;
-  transform: translate3d(0, 0, 0);
-}
-
 
 @media (max-width: 768px) {
   #carouselsection h2 {
@@ -677,7 +617,6 @@ section {
 
 
 @media (max-width: 1024px) {
-
   .about .content,
   .about .accordion-list {
     padding-left: 0;
@@ -710,20 +649,6 @@ section {
   }
 }
 
-/* test
-@media screen and (max-width: 468px) {
-  .carousel-indicators {
-    padding-bottom: 10.5vh;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .carousel-indicators {
-    padding-bottom: 3vh;
-  }
-}
-*/
-
 /*scroll bar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -739,7 +664,6 @@ section {
   background:  rgba(109, 103, 103, 0.644);
   border-radius: 20px;
 }
-
 
 @media (min-width:801px)  {
   body {
