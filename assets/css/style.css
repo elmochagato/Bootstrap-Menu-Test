@@ -10,15 +10,6 @@
   box-sizing: border-box;
 }
 
-#root {
-  position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    transition: all .2s;
-}
-
 /* Remove default margin */
 body,
 h1,
@@ -44,10 +35,6 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-html {
-  min-height: 100vh !important; 
-  min-height: -webkit-fill-available;
-}
 
 
 /* Set core body defaults */
@@ -55,9 +42,6 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: #202124;
-  min-height: 100vh !important; 
-  min-height: -webkit-fill-available;
-  height: 100vh;
 }
 
 /* A elements that don't have a class get default styles */
