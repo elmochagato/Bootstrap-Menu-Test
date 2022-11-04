@@ -143,35 +143,44 @@ select {
 }
 
 
-.d-block {
-  object-fit: cover;
-}
 
-#carouselExampleFade .carousel-item {  
-  object-position: center;
-  object-fit: cover;
-  overflow: hidden;
-  height: 100vh;
+#carouselsection .carousel-item {
+  width: 100%;
   height: 100vh;
 }
 
-#carouselExampleFade .carousel-item:before {
+/* carousel imgs*/
+.bg-1,
+.bg-2,
+.bg-3 {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-1 {
+  background-image: url('/img/pexels-chevanon-photography-32899.jpg');
+}
+
+.bg-2 {
+  background-image: url('/img/pexels-andrea-piacquadio-842548.jpg');
+}
+
+.bg-3 {
+  background-image: url('/img/pexels-afta-putta-gunawan-683039.jpg');
+}
+/* carousel imgs*/
+
+#carouselsection .carousel-item::before {
   content: "";
-  background-image:
-    linear-gradient(
-      to bottom,
-      transparent, rgba(0,0,0,0.5)
-    );
-  display: block;
-  position: fixed;
+  background-color: rgba(12, 11, 10, 0.5);
+  position: absolute;
   top: 0;
+  right: 0;
+  left: 0;
   bottom: 0;
-  width: 100vw;
-  height: 100vh;
-  min-height: 100vh; 
-  min-height: -webkit-fill-available;
- 
- 
 }
 
 .carousel-caption {
@@ -188,7 +197,6 @@ select {
 .ptext {
   padding: 10px;
 }
-
 
 
 
@@ -402,7 +410,7 @@ section {
 
 @media screen and (max-width: 468px) {
   .carousel-indicators {
-    padding-bottom: 10vh;
+    padding-bottom: 9vh;
   }
 }
 
