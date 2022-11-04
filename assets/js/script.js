@@ -57,4 +57,15 @@ buttons.forEach((button) => {
   });
 });
 
+let CarouselIndicators = select("#fade-carousel-indicators")
+let carouselExampleFadeItems = select('#carouselExampleFade .carousel-item', true)
+
+carouselExampleFadeItems.forEach((item, index) => {
+  (index === 0) ?
+  CarouselIndicators.innerHTML += "<li data-bs-target='#carouselExampleFade' data-bs-slide-to='" + index + "' class='active'></li>":
+    CarouselIndicators.innerHTML += "<li data-bs-target='#carouselExampleFade' data-bs-slide-to='" + index + "'></li>"
+});
+
 })()
+
+
