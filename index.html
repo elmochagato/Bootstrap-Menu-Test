@@ -39,10 +39,12 @@
         </button>
         <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
           aria-labelledby="offcanvasDarkNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><img src="./assets/img/Bootstrap_logo.png"
-                alt="Brand" width="36" height="30" class="d-inline-block align-text-top">
-              Bootstrap</h5>
+          <div class="navbar">
+            <a class="navbar-brand ms-1" href="#">
+              <img src="./assets/img/Bootstrap_logo.png" alt="Brand" width="36" height="30"
+                class="d-inline-block align-text-top logo-nav">
+              Bootstrap
+            </a>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
               aria-label="Close"></button>
           </div>
@@ -162,38 +164,34 @@
       </div>
     </section>
 
-    <section id="card-items ">
+    <section id="menu" class="menu">
       <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <img src="./assets/img/c1.jpg" class="card-img-top" alt="img">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                  additional content. This content is a little bit longer.</p>
-              </div>
-            </div>
+        <div class="section-title">
+          <h2>Our <span>Menu</span></h2>
+        </div>
+        <div class="row">
+          <div class="row-filter-btn col-lg-12 d-flex justify-content-center">
+            <ul id="menu-filters">
+              <li data-filter="*" class="filter-active">Show All</li>
+              <li data-filter=".filter-hot">Hot Beverages</li>
+              <li data-filter=".filter-cold">Cold Beverages</li>
+              <li data-filter=".filter-snacks">Snacks</li>
+            </ul>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="./assets/img/c1.jpg" class="card-img-top" alt="img">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a short card.</p>
-              </div>
-            </div>
+        </div>
+        <div class="row menu-container">
+          <div class="col-lg-6 menu-item filter-hot">
+            <div class="menu-content"> <h2>Turkish Coffee</h2><span>$5.95</span></div>
+            <div class="menu-ingredients"> Lorem, deren, trataro, filede, nerada</div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="./assets/img/c1.jpg" class="card-img-top" alt="img">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                  additional content.</p>
-              </div>
-            </div>
+          <div class="col-lg-6 menu-item filter-hot filter-cold">
+            <div class="menu-content"> <h2>Caffe Americano</h2><span>$6.95</span></div>
+            <div class="menu-ingredients"> Lorem, deren, trataro, filede, nerada</div>
           </div>
+          <div class="col-lg-6 menu-item filter-snacks">
+            <div class="menu-content"> <h2>Cheese Cake</h2><span>$7.95</span></div>
+            <div class="menu-ingredients"> A delicate crab cake served on a toasted roll with lettuce and tartar sauce
+            </div>
         </div>
       </div>
     </section>
@@ -230,6 +228,6 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
   <script src="./assets/js/script.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 </body>
-
 </html>
