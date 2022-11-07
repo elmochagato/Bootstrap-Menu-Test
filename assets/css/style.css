@@ -87,6 +87,7 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
 /* CSS RESET OVER*/
 /* CSS RESET OVER*/
 /* CSS RESET OVER*/
@@ -119,7 +120,6 @@ select {
   background-color: #1b1d1f;
 }
 
-
 .offcanvas-header {
   background-color: #1b1d1f;
 }
@@ -138,10 +138,9 @@ select {
   width: 100%;
 }
 
-
 /*About Section */
 .about .bg-4 {
-  background-image: url('../img/chev1080.jpg');
+  background-image: url("../img/chev1080.jpg");
   min-height: 400px;
   position: relative;
   background-size: cover;
@@ -151,7 +150,7 @@ select {
 
 .about .content {
   padding: 0 80px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .about .content h3 {
@@ -177,7 +176,7 @@ select {
   padding: 0;
 }
 
-.about .content ul li+li {
+.about .content ul li + li {
   margin-top: 15px;
 }
 
@@ -204,8 +203,8 @@ select {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * .5);
-  padding-left: calc(var(--bs-gutter-x) * .5);
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
 }
@@ -319,11 +318,9 @@ select {
 
 #carouselsection .carousel-inner {
   height: 100%;
-
 }
 
 #carouselsection .carouselsection-container {
-
   height: 100%;
 }
 
@@ -393,6 +390,7 @@ select {
     width: 5%;
   }
 }
+
 /* CAROUSEL */
 /* CAROUSEL */
 
@@ -402,7 +400,6 @@ select {
 .navbarsection {
   padding: 0;
 }
-
 
 section {
   padding: 60px 0;
@@ -627,7 +624,9 @@ section {
 }
 
 .menu .menu-content::after {
-  content: "......................................................................""....................................................................""....................................................................";
+  content: "......................................................................"
+    "...................................................................."
+    "....................................................................";
   position: absolute;
   left: 20px;
   right: 0;
@@ -666,6 +665,7 @@ section {
 #menu .row-filter-btn {
   padding: 0;
 }
+
 /**
  * Button
  */
@@ -707,9 +707,7 @@ section {
   }
 }
 
-
 @media (max-width: 1024px) {
-
   .about .content,
   .about .accordion-list {
     padding-left: 0;
@@ -733,7 +731,6 @@ section {
   }
 }
 
-
 /*scroll bar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -741,16 +738,14 @@ section {
 
 ::-webkit-scrollbar-track {
   margin-top: 7vh;
-
 }
-
 
 ::-webkit-scrollbar-thumb {
   background: rgba(109, 103, 103, 0.644);
   border-radius: 20px;
 }
 
-@media (min-width:801px) {
+@media (min-width: 801px) {
   body {
     overflow: overlay;
   }
@@ -781,7 +776,7 @@ section {
   border-top-color: #ffb03b;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
-  z-index: 1001
+  z-index: 1001;
 }
 
 #loader:before {
@@ -795,7 +790,7 @@ section {
   border: 3px solid transparent;
   border-top-color: #ffffff;
   -webkit-animation: spin 3s linear infinite;
-  animation: spin 3s linear infinite
+  animation: spin 3s linear infinite;
 }
 
 #loader:after {
@@ -809,20 +804,20 @@ section {
   border: 3px solid transparent;
   border-top-color: #8012f9;
   -webkit-animation: spin 1.5s linear infinite;
-  animation: spin 1.5s linear infinite
+  animation: spin 1.5s linear infinite;
 }
 
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
 
   100% {
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
-    transform: rotate(360deg)
+    transform: rotate(360deg);
   }
 }
 
@@ -830,13 +825,13 @@ section {
   0% {
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
 
   100% {
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
-    transform: rotate(360deg)
+    transform: rotate(360deg);
   }
 }
 
@@ -849,37 +844,37 @@ section {
   z-index: 1000;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
-  transform: translateX(0)
+  transform: translateX(0);
 }
 
 #preloader .loader-section.section-left {
-  left: 0
+  left: 0;
 }
 
 #preloader .loader-section.section-right {
-  right: 0
+  right: 0;
 }
 
 .loaded #preloader .loader-section.section-left {
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   transform: translateX(-100%);
-  -webkit-transition: all .7s .3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-  transition: all .7s .3s cubic-bezier(0.645, 0.045, 0.355, 1.000)
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .loaded #preloader .loader-section.section-right {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  -webkit-transition: all .7s .3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-  transition: all .7s .3s cubic-bezier(0.645, 0.045, 0.355, 1.000)
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .loaded #loader {
   opacity: 0;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .loaded #preloader {
@@ -887,10 +882,10 @@ section {
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
-  -webkit-transition: all .3s 1s ease-out;
-  transition: all .3s 1s ease-out
+  -webkit-transition: all 0.3s 1s ease-out;
+  transition: all 0.3s 1s ease-out;
 }
 
 .no-js #preloader {
-  display: none
+  display: none;
 }
