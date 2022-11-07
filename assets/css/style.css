@@ -692,6 +692,9 @@ section {
   font-size: 18px;
 }
 
+.btn-close {
+  opacity: 1;
+}
 /* Media Query */
 /* Media Query */
 
